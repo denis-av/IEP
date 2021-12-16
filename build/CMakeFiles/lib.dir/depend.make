@@ -25,3 +25,9 @@ CMakeFiles/lib.dir/src/SuperPrinter.cpp.o: ../headers/socket.hpp
 CMakeFiles/lib.dir/src/SuperPrinter.cpp.o: ../headers/superPrinter.hpp
 CMakeFiles/lib.dir/src/SuperPrinter.cpp.o: ../src/SuperPrinter.cpp
 
+CMakeFiles/lib.dir/src/lock.cpp.o: ../headers/lock.hpp
+CMakeFiles/lib.dir/src/lock.cpp.o: ../headers/person.hpp
+CMakeFiles/lib.dir/src/lock.cpp.o: ../headers/printer.hpp
+CMakeFiles/lib.dir/src/lock.cpp.o: ../headers/socket.hpp
+CMakeFiles/lib.dir/src/lock.cpp.o: ../src/lock.cpp
+

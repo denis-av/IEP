@@ -12,6 +12,12 @@
 iostream
 -
 
+/home/denisubuntu/Desktop/IEP/IEP/headers/lock.hpp
+iostream
+-
+./printer.hpp
+/home/denisubuntu/Desktop/IEP/IEP/headers/printer.hpp
+
 /home/denisubuntu/Desktop/IEP/IEP/headers/person.hpp
 iostream
 -
@@ -51,4 +57,6 @@ mutex
 /home/denisubuntu/Desktop/IEP/IEP/headers/person.hpp
 ../headers/socket.hpp
 /home/denisubuntu/Desktop/IEP/IEP/headers/socket.hpp
+../headers/lock.hpp
+/home/denisubuntu/Desktop/IEP/IEP/headers/lock.hpp
 

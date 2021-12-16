@@ -1,14 +1,27 @@
-/*
+#include "../headers/lock.hpp"
 #include<iostream>
-#include<memory>
+using namespace std;
 
-class Lock {
-    public:
-        explicit Lock(Mutex *pm) // init shared_ptr with the Mutex
-        : mutexPtr(pm, unlock) // to point to and the unlock func
-        { // as the deleter†
-            lock(mutexPtr.get()); // see Item 15 for info on “get”
-        }
-        private:
-        std::shared_ptr<Mutex> mutexPtr; // use shared_ptr
-};*/
+namespace lock{
+
+    Lock::Lock(){}
+
+    Lock::Lock(printer::Printer *print):
+        printer(print) {
+            lock(printer);
+        };
+
+    Lock::~Lock(){
+        unlock(printer);
+    }
+
+
+    void Lock::lock(printer::Printer *print){
+        std::cout << "Lock-mutex" << std::endl;
+    }
+
+    void Lock::unlock(printer::Printer *print){
+        std::cout << "Unlock-mutex" << std::endl;
+    }
+
+}

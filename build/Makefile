@@ -271,6 +271,33 @@ src/SuperPrinter.cpp.s:
 	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/SuperPrinter.cpp.s
 .PHONY : src/SuperPrinter.cpp.s
 
+src/lock.o: src/lock.cpp.o
+
+.PHONY : src/lock.o
+
+# target to build an object file
+src/lock.cpp.o:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/lock.cpp.o
+.PHONY : src/lock.cpp.o
+
+src/lock.i: src/lock.cpp.i
+
+.PHONY : src/lock.i
+
+# target to preprocess a source file
+src/lock.cpp.i:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/lock.cpp.i
+.PHONY : src/lock.cpp.i
+
+src/lock.s: src/lock.cpp.s
+
+.PHONY : src/lock.s
+
+# target to generate assembly for a file
+src/lock.cpp.s:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/lock.cpp.s
+.PHONY : src/lock.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -323,6 +350,9 @@ help:
 	@echo "... src/SuperPrinter.o"
 	@echo "... src/SuperPrinter.i"
 	@echo "... src/SuperPrinter.s"
+	@echo "... src/lock.o"
+	@echo "... src/lock.i"
+	@echo "... src/lock.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

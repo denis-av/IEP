@@ -25,3 +25,9 @@ CMakeFiles/lib.dir/src/SuperPrinter.cpp.o
  /home/denisubuntu/Desktop/IEP/IEP/headers/socket.hpp
  /home/denisubuntu/Desktop/IEP/IEP/headers/superPrinter.hpp
  /home/denisubuntu/Desktop/IEP/IEP/src/SuperPrinter.cpp
+CMakeFiles/lib.dir/src/lock.cpp.o
+ /home/denisubuntu/Desktop/IEP/IEP/headers/lock.hpp
+ /home/denisubuntu/Desktop/IEP/IEP/headers/person.hpp
+ /home/denisubuntu/Desktop/IEP/IEP/headers/printer.hpp
+ /home/denisubuntu/Desktop/IEP/IEP/headers/socket.hpp
+ /home/denisubuntu/Desktop/IEP/IEP/src/lock.cpp

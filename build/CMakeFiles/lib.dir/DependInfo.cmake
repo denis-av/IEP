@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/denisubuntu/Desktop/IEP/IEP/src/Person.cpp" "/home/denisubuntu/Desktop/IEP/IEP/build/CMakeFiles/lib.dir/src/Person.cpp.o"
   "/home/denisubuntu/Desktop/IEP/IEP/src/Socket.cpp" "/home/denisubuntu/Desktop/IEP/IEP/build/CMakeFiles/lib.dir/src/Socket.cpp.o"
   "/home/denisubuntu/Desktop/IEP/IEP/src/SuperPrinter.cpp" "/home/denisubuntu/Desktop/IEP/IEP/build/CMakeFiles/lib.dir/src/SuperPrinter.cpp.o"
+  "/home/denisubuntu/Desktop/IEP/IEP/src/lock.cpp" "/home/denisubuntu/Desktop/IEP/IEP/build/CMakeFiles/lib.dir/src/lock.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

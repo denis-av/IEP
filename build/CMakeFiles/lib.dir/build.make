@@ -122,13 +122,27 @@ CMakeFiles/lib.dir/src/Socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib.dir/src/Socket.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denisubuntu/Desktop/IEP/IEP/src/Socket.cpp -o CMakeFiles/lib.dir/src/Socket.cpp.s
 
+CMakeFiles/lib.dir/src/lock.cpp.o: CMakeFiles/lib.dir/flags.make
+CMakeFiles/lib.dir/src/lock.cpp.o: ../src/lock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denisubuntu/Desktop/IEP/IEP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lib.dir/src/lock.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lib.dir/src/lock.cpp.o -c /home/denisubuntu/Desktop/IEP/IEP/src/lock.cpp
+
+CMakeFiles/lib.dir/src/lock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib.dir/src/lock.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denisubuntu/Desktop/IEP/IEP/src/lock.cpp > CMakeFiles/lib.dir/src/lock.cpp.i
+
+CMakeFiles/lib.dir/src/lock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib.dir/src/lock.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denisubuntu/Desktop/IEP/IEP/src/lock.cpp -o CMakeFiles/lib.dir/src/lock.cpp.s
+
 # Object files for target lib
 lib_OBJECTS = \
 "CMakeFiles/lib.dir/src/NormalPrinter.cpp.o" \
 "CMakeFiles/lib.dir/src/AdvancePrinter.cpp.o" \
 "CMakeFiles/lib.dir/src/SuperPrinter.cpp.o" \
 "CMakeFiles/lib.dir/src/Person.cpp.o" \
-"CMakeFiles/lib.dir/src/Socket.cpp.o"
+"CMakeFiles/lib.dir/src/Socket.cpp.o" \
+"CMakeFiles/lib.dir/src/lock.cpp.o"
 
 # External object files for target lib
 lib_EXTERNAL_OBJECTS =
@@ -138,9 +152,10 @@ liblib.a: CMakeFiles/lib.dir/src/AdvancePrinter.cpp.o
 liblib.a: CMakeFiles/lib.dir/src/SuperPrinter.cpp.o
 liblib.a: CMakeFiles/lib.dir/src/Person.cpp.o
 liblib.a: CMakeFiles/lib.dir/src/Socket.cpp.o
+liblib.a: CMakeFiles/lib.dir/src/lock.cpp.o
 liblib.a: CMakeFiles/lib.dir/build.make
 liblib.a: CMakeFiles/lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/denisubuntu/Desktop/IEP/IEP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library liblib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/denisubuntu/Desktop/IEP/IEP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library liblib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib.dir/link.txt --verbose=$(VERBOSE)
 

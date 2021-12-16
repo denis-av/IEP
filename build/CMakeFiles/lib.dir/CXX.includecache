@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/denisubuntu/Desktop/IEP/IEP/headers/advancePrinter.hpp
-./printer.hpp
-/home/denisubuntu/Desktop/IEP/IEP/headers/printer.hpp
+/home/denisubuntu/Desktop/IEP/IEP/headers/lock.hpp
 iostream
 -
+./printer.hpp
+/home/denisubuntu/Desktop/IEP/IEP/headers/printer.hpp
 
 /home/denisubuntu/Desktop/IEP/IEP/headers/person.hpp
 iostream
@@ -28,43 +28,9 @@ iostream
 iostream
 -
 
-/home/denisubuntu/Desktop/IEP/IEP/headers/superPrinter.hpp
-./advancePrinter.hpp
-/home/denisubuntu/Desktop/IEP/IEP/headers/advancePrinter.hpp
-iostream
--
-
-/home/denisubuntu/Desktop/IEP/IEP/src/AdvancePrinter.cpp
-../headers/advancePrinter.hpp
-/home/denisubuntu/Desktop/IEP/IEP/headers/advancePrinter.hpp
-../headers/printer.hpp
-/home/denisubuntu/Desktop/IEP/IEP/headers/printer.hpp
-iostream
--
-
-/home/denisubuntu/Desktop/IEP/IEP/src/NormalPrinter.cpp
-../headers/printer.hpp
-/home/denisubuntu/Desktop/IEP/IEP/headers/printer.hpp
-iostream
--
-
-/home/denisubuntu/Desktop/IEP/IEP/src/Person.cpp
-../headers/person.hpp
-/home/denisubuntu/Desktop/IEP/IEP/headers/person.hpp
-iostream
--
-
-/home/denisubuntu/Desktop/IEP/IEP/src/Socket.cpp
-../headers/socket.hpp
-/home/denisubuntu/Desktop/IEP/IEP/headers/socket.hpp
-iostream
--
-
-/home/denisubuntu/Desktop/IEP/IEP/src/SuperPrinter.cpp
-../headers/advancePrinter.hpp
-/home/denisubuntu/Desktop/IEP/IEP/headers/advancePrinter.hpp
-../headers/superPrinter.hpp
-/home/denisubuntu/Desktop/IEP/IEP/headers/superPrinter.hpp
+/home/denisubuntu/Desktop/IEP/IEP/src/lock.cpp
+../headers/lock.hpp
+/home/denisubuntu/Desktop/IEP/IEP/headers/lock.hpp
 iostream
 -
 

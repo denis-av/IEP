@@ -3,6 +3,7 @@
 
 CMakeFiles/printer.dir/src/main.cpp.o
  /home/denisubuntu/Desktop/IEP/IEP/headers/advancePrinter.hpp
+ /home/denisubuntu/Desktop/IEP/IEP/headers/lock.hpp
  /home/denisubuntu/Desktop/IEP/IEP/headers/person.hpp
  /home/denisubuntu/Desktop/IEP/IEP/headers/printer.hpp
  /home/denisubuntu/Desktop/IEP/IEP/headers/socket.hpp

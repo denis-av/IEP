@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lib.dir/src/Person.cpp.o"
   "CMakeFiles/lib.dir/src/Socket.cpp.o"
   "CMakeFiles/lib.dir/src/SuperPrinter.cpp.o"
+  "CMakeFiles/lib.dir/src/lock.cpp.o"
   "liblib.a"
   "liblib.pdb"
 )

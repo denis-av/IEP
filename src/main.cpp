@@ -6,6 +6,7 @@
 #include "../headers/superPrinter.hpp"
 #include "../headers/person.hpp"
 #include "../headers/socket.hpp"
+#include "../headers/lock.hpp"
 
 std::mutex  mutex;
 unsigned int pages = 0;
@@ -18,12 +19,22 @@ void printDocument(printer::Printer &printer, unsigned int pagesOfDocument){
 }
 
 int main(){
-    std::unique_ptr<person::Person> personOne(new person::Person("Avram","Denis",22,"12345"));
+    std::unique_ptr<person::Person> person(new person::Person("Avram","Denis",22,"12345"));
+    std::cout << "Adresa pers:" << person.get() << std::endl;
+    std::unique_ptr<person::Person> personOne = move(person);
+    std::cout << "Adresa pers:" << person.get() << std::endl;
+    std::cout << "Adresa personOne:" << personOne.get() << std::endl;
+
     std::unique_ptr<printer::Printer> printer(new printer::Printer(70,35,12,false,100.5,0.5,0.4));
     printer->addPerson(*personOne); 
     printer->printDetails();
     std::cout << std::endl;
+
     std::shared_ptr<socket::Socket> socket(new socket::Socket("Room1",15,10,"LPR1235"));
+    std::shared_ptr<socket::Socket> socket2(socket);
+    std::cout << "Adresa socket1:" << socket.get() << std::endl;
+    std::cout << "Adresa socket2:" << socket2.get() << std::endl;
+    std::cout << std::endl;
     printer->connectToASocket(*socket);
     std::cout << std::endl;
     std::unique_ptr<super::Super> superPrinter(new super::Super());
@@ -37,6 +48,11 @@ int main(){
     printDocument(*printer,50);
     printDocument(*superPrinter,15);
     std::cout << pages << " was printed in total." << std::endl;
+
+    std::cout << std::endl;
+    printer::Printer prnt;
+    lock::Lock mutex(&prnt);
+    std::cout << std::endl;
     /*
     std::cout << std::endl;
     std::cout << printer->calculateNoPagesToPrintWithColorInk() << " files could be printed using blank ink by Printer 1" << std::endl;

@@ -1,16 +1,21 @@
 #include<iostream>
-#include<memory>
-#include<mutex>
+#include "./printer.hpp"
 #ifndef LOCK_HPP
 #define LOCK_HPP
 
 namespace lock{
     class Lock{
-        protected:
-            std::shared_ptr<std::mutex> mutexPtr;
+        private:
+        printer::Printer *printer;
+        Lock(const Lock&);
+        Lock & operator=(const Lock&);
 
         public:
-            explicit Lock(std::mutex *pm);
+            explicit Lock(printer::Printer *);
+            Lock();
+            ~Lock();
+            void lock(printer::Printer *);
+            void unlock(printer::Printer *);
     };
 
 }
